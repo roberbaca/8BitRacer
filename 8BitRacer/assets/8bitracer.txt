@@ -1,0 +1,295 @@
+Game.h
+======
+
+class Game
+{
+
+public:
+	Game(int resolucionx, int resoluciony, string titulo);
+	void gameLoop();
+	void cargar_graficos();
+	void procesar_eventos();
+	void procesar_colisiones();	
+	
+
+private:
+	
+	int posicion;
+	int num_vuelta;
+	int total_vueltas;
+	float tiempo_vuelta;
+	float tiempo_total;
+	Event evento1;
+
+	Sprite spr_player;
+	Texture mat_player;
+
+	Sprite spr_pista;
+	Texture mat_pista;
+
+	Clock *reloj1;
+	Time *tiempo1; 
+	float tiempo2;
+
+};
+
+
+Game.cpp
+========
+
+#include "Game.h"
+
+//constructor
+
+Game::Game(int resolucionx, int resoluciony, string titulo)
+{
+
+ventana = new RenderWindow(VideoMode(resolucion_x, resolucion_y), titulo);
+
+GameOver = false;
+
+// variables para controlar el tiempo
+reloj1 = new Clock();
+tiempo1 = new Time();
+tiempo2 = 0;
+
+
+cargar_graficos();
+gameLoop();
+
+}
+
+
+
+void Game::gameLoop()
+
+{
+	
+	while (!GameOver)
+	{
+
+
+	ventana->clear();
+	procesar_eventos();
+	ventana->draw(spr_pista);	
+	}
+
+}
+
+
+
+
+void cargar_graficos()
+{
+
+    mat_pista.loadFromFile("background.png");
+    mat_player.loadFromFile("car.png");
+    mat_pista.setSmooth(true);
+    mat_player.setSmooth(true);
+    
+    spr_player.setTexture(mat_player);
+    spr_pista.setTexture(mat_pista);
+
+    //Ocultamos el cursor del sistema
+    ventana->setMouseCursorVisible(false);
+
+}
+
+
+void Game::procesar_eventos()
+{
+while (ventana->pollEvent(evento1))
+		{
+			switch(evento1.type)
+			{
+				case Event::Closed: //evento para detectar que se cierra la ventana clickeando en X
+					ventana->close();
+					exit(1);
+				break;
+						
+				case Event::KeyPressed: // para cerrar el juego presionando la tecla ESC
+					if (Keyboard::isKeyPressed(Keyboard::Escape))
+					{
+						exit(1);
+					}
+				break;
+
+			}
+
+			eventos_auto();
+		}			
+
+
+
+
+
+
+
+Player.h
+======
+
+class Player
+{
+
+public:
+	Player();
+	void eventos_auto();
+	void movimiento_auto();
+
+private:
+	
+	float velocidad;
+	float angulo;
+	float velocidad_max;
+	float aceleracion;
+	float frenos;
+	float velocidad_giro;
+	int x, y;
+};
+
+
+
+Player::Player()
+{
+
+velocidad = 0;
+angulo = 0;
+velocidad_max = 12.0;
+aceleracion = 0.2;
+frenos = 0.3;
+velocidad_giro = 0.08;
+x = 0;
+y = 0;
+
+}
+
+
+
+
+
+void Player::eventos_auto()
+{
+    //Eventos con el teclado
+    bool Up = false;
+    bool Right = false;
+    bool Down = false;
+    bool Left = false;
+
+
+    if (Keyboard::isKeyPressed(Keyboard::Up)) 
+    {	
+	Up = true;
+    }
+    if (Keyboard::isKeyPressed(Keyboard::Right))
+    {	
+	Right = true;
+    }
+
+    if (Keyboard::isKeyPressed(Keyboard::Down)) 
+    {	
+	Down = true;
+    }
+
+    if (Keyboard::isKeyPressed(Keyboard::Left)) 
+    {	
+	Left = true;
+    }
+
+
+  
+    if (Up && velocidad<velocidad_max)
+    {
+	if(velocidad<0)
+	{
+		velocidad +=frenos;
+	}
+	else
+	{
+		velocidad +=aceleracion;
+	}
+    }	
+   
+
+    if (Down && velocidad>-velocidad_max)
+    {
+	if velocidad> 0) 
+	{
+		velocidad -= frenos;
+	}
+       
+        else  velocidad-= aceleracion;
+
+    }
+
+
+    if (!Up && !Down)
+    {       
+ 	if (velocidad - frenos > 0) 
+	{
+		velocidad -= frenos;
+	}
+    
+        else if (speed + frenos < 0) 
+	{
+		velocidad += frenos;
+	}        
+    }    
+    else 
+    {	
+	velocidad = 0;
+    }
+
+
+    //cuando un auto gira en un curva, la velocidad disminuye
+    if (Right && velocidad != 0)
+    {
+    	angulo += velocidad_giro * velocidad/velocidad_max;
+    }
+
+
+    if (Left && velocidad != 0)   
+    {
+    	angulo -= velocidad_giro * velocidad/velocidad_max;
+    }
+
+
+}
+
+
+
+void Player::movimientos_auto()
+{
+
+x += sin(angulo) * velocidad;
+y -= cos(angulo) * velocidad;
+
+}
+
+
+
+ for(int i=0;i<N;i++)
+    {
+      sCar.setPosition(car[i].x-offsetX,car[i].y-offsetY);
+      sCar.setRotation(car[i].angle*180/3.141593);
+      sCar.setColor(colors[i]);
+      app.draw(sCar);
+    }
+
+
+}
+
+
+
+Main.cpp
+========
+
+
+int main (int argc, char* argv[])
+{
+
+Game *partida1;
+
+partida1 = new Game(800,600,"8Bit Racer");
+
+return 0;
+}

@@ -1,0 +1,80 @@
+﻿  Main.cpp
+C:\Users\Roni_PC\Documents\Visual Studio 2019\Proyectos\8BitRacer - v2.4\8BitRacer\Main.cpp(24,11): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Game.cpp
+C:\Users\Roni_PC\Documents\Visual Studio 2019\Proyectos\8BitRacer - v2.4\8BitRacer\Game.cpp(219,32): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Roni_PC\Documents\Visual Studio 2019\Proyectos\8BitRacer - v2.4\8BitRacer\Game.cpp(230,75): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Roni_PC\Documents\Visual Studio 2019\Proyectos\8BitRacer - v2.4\8BitRacer\Game.cpp(230,53): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Roni_PC\Documents\Visual Studio 2019\Proyectos\8BitRacer - v2.4\8BitRacer\Game.cpp(429,18): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Roni_PC\Documents\Visual Studio 2019\Proyectos\8BitRacer - v2.4\8BitRacer\Game.cpp(430,18): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Roni_PC\Documents\Visual Studio 2019\Proyectos\8BitRacer - v2.4\8BitRacer\Game.cpp(431,19): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Roni_PC\Documents\Visual Studio 2019\Proyectos\8BitRacer - v2.4\8BitRacer\Game.cpp(432,19): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Roni_PC\Documents\Visual Studio 2019\Proyectos\8BitRacer - v2.4\8BitRacer\Game.cpp(434,22): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Roni_PC\Documents\Visual Studio 2019\Proyectos\8BitRacer - v2.4\8BitRacer\Game.cpp(435,22): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Roni_PC\Documents\Visual Studio 2019\Proyectos\8BitRacer - v2.4\8BitRacer\Game.cpp(449,18): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Roni_PC\Documents\Visual Studio 2019\Proyectos\8BitRacer - v2.4\8BitRacer\Game.cpp(450,18): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Roni_PC\Documents\Visual Studio 2019\Proyectos\8BitRacer - v2.4\8BitRacer\Game.cpp(451,21): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Roni_PC\Documents\Visual Studio 2019\Proyectos\8BitRacer - v2.4\8BitRacer\Game.cpp(452,21): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Roni_PC\Documents\Visual Studio 2019\Proyectos\8BitRacer - v2.4\8BitRacer\Game.cpp(453,22): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Roni_PC\Documents\Visual Studio 2019\Proyectos\8BitRacer - v2.4\8BitRacer\Game.cpp(454,22): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Roni_PC\Documents\Visual Studio 2019\Proyectos\8BitRacer - v2.4\8BitRacer\Game.cpp(495,27): warning C4244: '=': conversion from '_Ty' to 'int', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+C:\Users\Roni_PC\Documents\Visual Studio 2019\Proyectos\8BitRacer - v2.4\8BitRacer\Game.cpp(496,27): warning C4244: '=': conversion from '_Ty' to 'int', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+C:\Users\Roni_PC\Documents\Visual Studio 2019\Proyectos\8BitRacer - v2.4\8BitRacer\Game.cpp(497,27): warning C4244: '=': conversion from '_Ty' to 'int', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+C:\Users\Roni_PC\Documents\Visual Studio 2019\Proyectos\8BitRacer - v2.4\8BitRacer\Game.cpp(498,26): warning C4244: '=': conversion from '_Ty' to 'int', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+C:\Users\Roni_PC\Documents\Visual Studio 2019\Proyectos\8BitRacer - v2.4\8BitRacer\Game.cpp(716,18): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Roni_PC\Documents\Visual Studio 2019\Proyectos\8BitRacer - v2.4\8BitRacer\Game.cpp(717,18): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Roni_PC\Documents\Visual Studio 2019\Proyectos\8BitRacer - v2.4\8BitRacer\Game.cpp(718,18): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Player.cpp
+C:\Users\Roni_PC\Documents\Visual Studio 2019\Proyectos\8BitRacer - v2.4\8BitRacer\Player.cpp(8,21): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\Roni_PC\Documents\Visual Studio 2019\Proyectos\8BitRacer - v2.4\8BitRacer\Player.cpp(9,19): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\Roni_PC\Documents\Visual Studio 2019\Proyectos\8BitRacer - v2.4\8BitRacer\Player.cpp(10,14): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\Roni_PC\Documents\Visual Studio 2019\Proyectos\8BitRacer - v2.4\8BitRacer\Player.cpp(11,23): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\Roni_PC\Documents\Visual Studio 2019\Proyectos\8BitRacer - v2.4\8BitRacer\Player.cpp(33,29): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Roni_PC\Documents\Visual Studio 2019\Proyectos\8BitRacer - v2.4\8BitRacer\Player.cpp(154,27): warning C4244: '=': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\Roni_PC\Documents\Visual Studio 2019\Proyectos\8BitRacer - v2.4\8BitRacer\Player.cpp(168,27): warning C4244: '=': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\Roni_PC\Documents\Visual Studio 2019\Proyectos\8BitRacer - v2.4\8BitRacer\Player.cpp(179,35): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  RaceTrack.cpp
+C:\Users\Roni_PC\Documents\Visual Studio 2019\Proyectos\8BitRacer - v2.4\8BitRacer\RaceTrack.cpp(14,28): warning C4244: 'return': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\Roni_PC\Documents\Visual Studio 2019\Proyectos\8BitRacer - v2.4\8BitRacer\RaceTrack.cpp(20,28): warning C4244: 'return': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+  CarAI.cpp
+C:\Users\Roni_PC\Documents\Visual Studio 2019\Proyectos\8BitRacer - v2.4\8BitRacer\CarAI.cpp(8,24): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\Roni_PC\Documents\Visual Studio 2019\Proyectos\8BitRacer - v2.4\8BitRacer\CarAI.cpp(27,26): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Roni_PC\Documents\Visual Studio 2019\Proyectos\8BitRacer - v2.4\8BitRacer\CarAI.cpp(82,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Roni_PC\Documents\Visual Studio 2019\Proyectos\8BitRacer - v2.4\8BitRacer\CarAI.cpp(83,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Roni_PC\Documents\Visual Studio 2019\Proyectos\8BitRacer - v2.4\8BitRacer\CarAI.cpp(116,32): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 584 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  8BitRacer.vcxproj -> C:\Users\Roni_PC\Documents\Visual Studio 2019\Proyectos\8BitRacer - v2.4\Release\8BitRacer.exe
