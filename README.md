@@ -10,3 +10,7 @@ Push it to the limits !
 
 ![image](https://user-images.githubusercontent.com/83043304/123017806-b97c6780-d3a3-11eb-9a05-8b918fd33064.png)
 
+Game available on Itch.io
+
+https://rober-baca.itch.io/8bit-racer
+
